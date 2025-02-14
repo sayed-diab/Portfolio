@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/favicon2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayed Diab - Frontend Developer</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+
+    const rootDiv = document.getElementById("root");
+    let isHidden = false;
+
+    function toggleVisibility() {
+      isHidden = !isHidden;
+      if (isHidden) {
+        rootDiv.setAttribute("aria-hidden", "true");
+        rootDiv.setAttribute("inert", "");
+      } else {
+        rootDiv.removeAttribute("aria-hidden");
+        rootDiv.removeAttribute("inert");
+      }
+    }
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

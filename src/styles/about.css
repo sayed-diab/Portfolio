@@ -1,0 +1,45 @@
+.about {
+    height: fit-content;
+    padding: var(--padding-w);
+
+    p {
+        font-size: 19px;
+        word-spacing: 4px;
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .about p {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about {
+        padding: var(--padding-sm);
+    }
+
+
+
+    .about p {
+        font-size: 18px;
+        word-spacing: 4px;
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        padding: var(--padding-s);
+    }
+
+    .about h1 {
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        font-size: 18px;
+        width: 100%;
+        word-spacing: 4px;
+    }
+}
