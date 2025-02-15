@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Portfolio/assets/favicon2-DFjDagh9.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayed Diab - Frontend Developer</title>
+  <script type="module" crossorigin src="/Portfolio/assets/index-CjFi9FA5.js"></script>
+  <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-w96ZjaxJ.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+
+    const rootDiv = document.getElementById("root");
+    let isHidden = false;
+
+    function toggleVisibility() {
+      isHidden = !isHidden;
+      if (isHidden) {
+        rootDiv.setAttribute("aria-hidden", "true");
+        rootDiv.setAttribute("inert", "");
+      } else {
+        rootDiv.removeAttribute("aria-hidden");
+        rootDiv.removeAttribute("inert");
+      }
+    }
+  </script>
+</body>
+
+</html>
