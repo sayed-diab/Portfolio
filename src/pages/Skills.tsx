@@ -22,7 +22,7 @@ const Skills = () => {
             {development.map((icon) => (
               <img
                 className="icon-skill"
-                src={`../src/assets/skills/${icon}`}
+                src={`src/assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"
@@ -39,7 +39,7 @@ const Skills = () => {
             {frameworksAndLibraries.map((icon) => (
               <img
                 className="icon-skill"
-                src={`../src/assets/skills/${icon}`}
+                src={`src/assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"
@@ -56,7 +56,7 @@ const Skills = () => {
             {vAndG.map((icon) => (
               <img
                 className="icon-skill"
-                src={`../src/assets/skills/${icon}`}
+                src={`src/assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"
@@ -73,7 +73,7 @@ const Skills = () => {
             {db.map((icon) => (
               <img
                 className="icon-skill"
-                src={`../src/assets/skills/${icon}`}
+                src={`src/assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"
@@ -90,7 +90,7 @@ const Skills = () => {
             {dg.map((icon) => (
               <img
                 className="icon-skill"
-                src={`../src/assets/skills/${icon}`}
+                src={`src/assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"

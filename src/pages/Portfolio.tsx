@@ -51,7 +51,7 @@ const Portoflio = () => {
               <div className="d-flex justify-content-between align-items-center">
                 <div className="info d-flex justify-content-between align-items-start">
                   <img
-                    src="./src/assets/favicon.webp"
+                    src="/src/assets/favicon.webp"
                     alt="NND"
                     className="mr-5 h-[75px]"
                   />
@@ -90,7 +90,7 @@ const Portoflio = () => {
                 <hr className="max-md:mx-4 md:mx-8 text-gray-600" />
                 <div className="flex flex-col gap-2 max-md:mx-4 md:mx-8">
                   <h3 className="tracking-wider font-normal text-xs uppercase mb-0  text-gray-600">tech</h3>
-                  <div className="flex gap-2 overflow-x-auto">{Tech(['React', 'Gasp', ''])}</div>
+                  <div className="flex gap-2 overflow-x-auto">{Tech(['React', 'Gasp', 'Bootstrap'])}</div>
                 </div>
                 <DrawerTitle>
                   <Carousel className="md:ml-8 pt-4">
