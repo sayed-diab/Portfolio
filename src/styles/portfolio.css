@@ -10,32 +10,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
     margin-top: 60px;
-    overflow: visible;
-    pointer-events: auto !important;
-
-    ::-webkit-scrollbar {
-
-        height: 5px !important;
-
-    }
-
-
-
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--silver-color) !important;
-        border-radius: 999px;
-        -webkit-border-radius: 999px;
-        -moz-border-radius: 999px;
-        -ms-border-radius: 999px;
-        -o-border-radius: 999px;
-        width: 100px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background-image: url("") !important;
-        background-color: #ccc;
-
-    }
 }
 
 .info img {
@@ -224,56 +198,16 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     opacity: 0 !important;
 }
 
-.drawer-content::-webkit-scrollbar {
-    width: 5px !important;
-}
-
-.drawer-content::-webkit-scrollbar-thumb {
-    border-radius: 999px;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    -ms-border-radius: 999px;
-    -o-border-radius: 999px;
-    /* display: none !important; */
-    background: var(--sec-color) !important;
-}
-
-.drawer-content::-webkit-scrollbar-track {
-    background-image: url("") !important;
-    background: transparent !important;
-}
-
 .drawer-content {
-    overflow-y: scroll;
-    /* scrollbar-width: none; */
-
-    ::-webkit-scrollbar {
-
-        height: 5px !important;
-
+    .os-scrollbar-handle {
+        background: #ccc !important;
+        width: 6px !important;
     }
 
-
-
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--silver-color) !important;
-        border-radius: 999px;
-        -webkit-border-radius: 999px;
-        -moz-border-radius: 999px;
-        -ms-border-radius: 999px;
-        -o-border-radius: 999px;
-        width: 100px;
+    .os-scrollbar-track:hover .os-scrollbar-handle {
+        background: #ccc !important;
+        width: 6px !important;
     }
-
-    ::-webkit-scrollbar-track {
-        background-image: url("") !important;
-        background-color: #ccc;
-
-    }
-}
-
-.drawer-content:hover::-webkit-scrollbar-thumb:hover {
-    background: #993399;
 }
 
 @media (max-width:1336px) {}

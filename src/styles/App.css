@@ -18,26 +18,26 @@
     --gradient-color: linear-gradient(#ee0001, #000)
 }
 
-::-webkit-scrollbar {
-    width: 2px;
 
+.os-scrollbar-handle {
+    background: var(--silver-color) !important;
 }
 
+.os-scrollbar-track {}
 
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--silver-color);
-
+.os-scrollbar-track:hover {
+    background: rgba(255, 255, 255, 0.342) !important;
+    /* width: 10px !important; */
 }
 
-::-webkit-scrollbar-track {
-    background-image: url("../assets/background/scroll-bar.png");
-
+.os-scrollbar-track:hover .os-scrollbar-handle {
+    background: var(--sec-color) !important;
+    width: 10px !important;
 }
-
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body {
@@ -64,9 +64,7 @@ body::before {
     z-index: -1;
 }
 
-body [data-state=open] {
-    overflow: hidden;
-}
+
 
 .title-section {
     font-weight: 700;
@@ -76,6 +74,11 @@ body [data-state=open] {
     span {
         color: var(--sec-color);
         font-weight: 900;
+    }
+
+    @media (max-width: 576px) {
+        margin-bottom: 50px;
+        font-size: 26px;
     }
 }
 

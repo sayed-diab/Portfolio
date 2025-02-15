@@ -287,20 +287,30 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 576px) {
+    .shadow {
+        width: 545px !important;
+        height: 545px !important;
+    }
+
+    .shape-pic {
+        width: 550px !important;
+        height: 550px !important;
+    }
 
     .wraper {
-        margin-right: -120px;
+        margin-right: -80px;
+        margin-top: 220px;
     }
 
     .cut-shape {
 
-        height: 750px !important;
-        bottom: 110px;
+        height: 700px !important;
+        bottom: 150px;
 
         img {
             left: 45px;
-            height: 750px;
+            height: 700px;
         }
     }
 
@@ -308,9 +318,8 @@
 
 
     .land-container .text {
-        font-size: 38px;
-        left: 50px;
-        top: 50px;
+        font-size: 34px;
+        left: 35px;
         width: 300px;
         position: absolute;
     }
@@ -322,11 +331,11 @@
     }
 
     .scroll-down {
-        font-size: 24px;
+        font-size: 14px;
         display: flex;
         left: 100px;
-        height: 550px;
-        bottom: -50px;
+        height: 480px;
+
     }
 }
 
