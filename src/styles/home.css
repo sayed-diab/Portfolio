@@ -82,7 +82,12 @@
     display: flex;
     right: 40px;
     bottom: 40px;
-    /* display: none; */
+    font-weight: 100 !important;
+    font-style: normal;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    height: fit-content !important;
 }
 
 .land-container .text h1 {

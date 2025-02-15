@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 
+
+
 .portfolio {
     padding: var(--padding-w);
 }
@@ -55,8 +57,10 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 
 .button-container-3 {
     position: relative;
-    width: 100px;
-    height: 40px;
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 35px;
+    height: 35px;
     overflow: hidden;
     border: 1px solid var(--silver-color);
     font-family: "Lato", sans-serif;
@@ -76,7 +80,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 }
 
 .button-container-3 div {
-    width: 101%;
+    width: 100%;
     height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -87,8 +91,8 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     letter-spacing: 3px;
     font-weight: bold;
     background-image: url('../assets/bg-icon.webp');
-    -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-    mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+    -webkit-mask: url("./src/assets/btn/natureSmaller.png");
+    mask: url("./src/assets/btn/natureSmaller.png");
     -webkit-mask-size: 7100% 100%;
     mask-size: 7100% 100%;
     border: none;
@@ -115,7 +119,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     font-weight: 300;
     position: absolute;
     font-size: 11px;
-    margin-top: 13px;
+    margin-top: 10px;
     overflow: hidden;
     font-weight: bold;
     transform: translate(-50%);

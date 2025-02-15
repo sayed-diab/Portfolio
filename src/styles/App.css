@@ -15,7 +15,8 @@
     --padding-w: 50px 0 150px;
     --padding-sm: 50px 0 150px 50px;
     --padding-s: 50px 0 100px 25px;
-    --gradient-color: linear-gradient(#ee0001, #000)
+    --gradient-color: linear-gradient(#ee0001, #000);
+    --hr-w: calc(100% - 50px);
 }
 
 
