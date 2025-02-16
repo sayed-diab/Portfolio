@@ -4,6 +4,7 @@ const Skills = () => {
   const frameworksAndLibraries = ['Bootstrap.svg', 'React.js.png', 'Tailwindcss.png', 'Redux-toolkit.svg', 'Ant-design.svg'];
   const vAndG = ['Git.svg', 'Github.svg'];
   const db = ['Firebase.svg'];
+  const bt = ['vite.svg'];
   const dg = ['Adobe Photoshop.svg', 'Adobe illustrator.svg', 'Figma.svg'];
   return (
     <section
@@ -22,7 +23,7 @@ const Skills = () => {
             {development.map((icon) => (
               <img
                 className="icon-skill"
-                src={`src/assets/skills/${icon}`}
+                src={`./assets/skills/${icon}`}
                 alt={icon}
                 key={icon}
                 loading="lazy"
@@ -71,6 +72,23 @@ const Skills = () => {
           </h5>
           <div className="icon-skills">
             {db.map((icon) => (
+              <img
+                className="icon-skill"
+                src={`src/assets/skills/${icon}`}
+                alt={icon}
+                key={icon}
+                loading="lazy"
+                title={icon.replace(/.(svg|png)$/, '')}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="skills-box">
+          <h5>
+            Build Tools <span>:</span>
+          </h5>
+          <div className="icon-skills">
+            {bt.map((icon) => (
               <img
                 className="icon-skill"
                 src={`src/assets/skills/${icon}`}
