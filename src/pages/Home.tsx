@@ -20,7 +20,7 @@ const Home = () => {
           <div className="shape-pic">
             <div className="cut-shape">
               <img
-                src="./src/assets/New-Bg.webp"
+                src="./assets/New-Bg.webp"
                 alt=""
                 loading="lazy"
               />
@@ -28,7 +28,6 @@ const Home = () => {
           </div>
         </div>
         <div className="text flex flex-col">
-          <h2 className="fw-light mb-0 fs-1 flex align-items-center">Hi, I am Sayed Diab,</h2>
           <h1>
             I am <span className="a">a</span>
             <MorphingText

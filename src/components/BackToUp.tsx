@@ -6,7 +6,6 @@ const BackToUp = () => {
     const windowHeight = () => setHeight(window.scrollY);
     window.addEventListener('scroll', windowHeight);
   }, []);
-  //   console.log(height);
 
   return (
     <>

@@ -9,7 +9,7 @@ const About = () => {
         About <span>Me</span>
       </h1>
       <p>
-        Hi 👋, I am a passionate front-end developer with over 5 years of experience in building modern and responsive web applications since 2019. <br />I specialize in technologies like HTML, CSS, JavaScript, and React, and I am constantly expanding my skills to include frameworks such as Next.js, SASS, and Node.js.
+        Hi 👋, I am Sayed Diab, I am a passionate front-end developer with over 5 years of experience in building modern and responsive web applications since 2019. <br />I specialize in technologies like HTML, CSS, JavaScript, and React, and I am constantly expanding my skills to include frameworks such as Next.js, SASS, and Node.js.
       </p>
       <p>I have also completed a front-end development course provided by the Egyptian Ministry of Communications and Information Technology in collaboration with Udacity, which enhanced my technical skills and deepened my understanding of industry best practices.</p>
       <p>I have had the privilege of working with numerous clients through the Khamsat platform, successfully delivering high-quality projects that meet their unique needs. My experience on the platform has sharpened my ability to communicate effectively, understand client requirements, and deliver results within deadlines.</p>

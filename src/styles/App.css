@@ -13,12 +13,15 @@
     --thrd-color: #d56523;
     --silver-color: #808080;
     --padding-w: 50px 0 150px;
-    --padding-sm: 50px 0 150px 50px;
-    --padding-s: 50px 0 100px 25px;
+    --padding-sm: 50px 50px 150px;
+    --padding-s: 50px 25px 100px 15px;
     --gradient-color: linear-gradient(#ee0001, #000);
     --hr-w: calc(100% - 50px);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .os-scrollbar-handle {
     background: var(--silver-color) !important;
@@ -36,9 +39,16 @@
     width: 10px !important;
 }
 
+
+.os-scrollbar-handle button[aria-haspopup="dialog"][data-state="open"] {
+    visibility: hidden;
+
+}
+
+
+
 html {
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    scroll-behavior: smooth ! important;
 }
 
 body {
@@ -46,26 +56,21 @@ body {
     font-weight: 300;
     font-style: normal;
     min-height: fit-content;
-    background-image: url("../assets/background/black-stone-texture.jpg");
+    background-image: url("./assets/background/black-stone-texture.webp");
     background-size: cover;
-    position: relative;
+    scrollbar-width: none !important;
     background-attachment: fixed;
     max-width: 100vw;
 
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.722);
-    z-index: -1;
+body>.os-scrollbar {
+    z-index: 30;
 }
 
-
+.hero {
+    scrollbar-width: none !important;
+}
 
 .title-section {
     font-weight: 700;
@@ -157,6 +162,7 @@ body::before {
 
 .container-main {
     display: flex;
+    z-index: 10;
 }
 
 .cont {

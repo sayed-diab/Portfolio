@@ -1,0 +1,41 @@
+{
+  "nnd": {
+    "panels": ["./assets/projects/nnd/1.webp", "./assets/projects/nnd/2.webp", "./assets/projects/nnd/3.webp", "./assets/projects/nnd/4.webp", "./assets/projects/nnd/5.webp"],
+    "altPanels": "NND PRO CHILD panels",
+    "title": "NND PRO CHILDREN",
+    "logo": "./assets/projects/nnd/logo.webp",
+    "altLogo": "NND PRO CHILDREN logo",
+    "description": "Complete front-end build to showcase and sell premium kids' supplement products.",
+    "tech": ["React", "Gasp", "Bootstrap"],
+    "live": "https://sayed-diab.github.io/nnd-pro-childern",
+    "prag1": "Kids' supplements often get a bad rap. And for good reason many are packed with artificial ingredients, lack transparency, and fail to meet real nutritional needs.",
+    "prag2": "NND is here to change that.",
+    "prag3": "A complete rebuild of NND’s site featuring an engaging e-commerce experience, educational content, and a full admin area for seamless order management."
+  },
+  "socotra": {
+    "panels": ["./assets/projects/socotra/1.webp", "./assets/projects/socotra/2.webp", "./assets/projects/socotra/3.webp", "./assets/projects/socotra/4.webp"],
+    "altPanels": "2SOCOTRA panels",
+    "title": "2SOCOTRA TRAVEL",
+    "logo": "./assets/projects/socotra/logo.webp",
+    "altLogo": "2SOCOTRA logo",
+    "description": "Full landing page development to present and market unique travel experiences to Socotra.",
+    "tech": ["React", "Gasp", "FontAwesome"],
+    "live": "https://sayed-diab.github.io/2socotra",
+    "prag1": "Planning a trip to Socotra can be overwhelming. With limited resources, scattered information, and unreliable bookings, travelers often struggle to plan their perfect adventure.",
+    "prag2": "2SOCOTRA TRAVEL is here to redefine the experience.",
+    "prag3": "A complete landing page build designed to offer a seamless booking experience, stunning travel insights, and an intuitive admin panel for effortless trip management."
+  },
+  "kasper": {
+    "panels": ["./assets/projects/kasper/1.webp", "./assets/projects/kasper/2.webp", "./assets/projects/kasper/3.webp", "./assets/projects/kasper/4.webp", "./assets/projects/kasper/5.webp"],
+    "altPanels": "KASPER panels",
+    "title": "KASPER",
+    "logo": "./assets/projects/kasper/logo.webp",
+    "altLogo": "KASPER logo",
+    "description": "Expertly crafted front-end template to beautifully display and elevate your creative projects with KASPER.",
+    "tech": ["Gasp", "AntDesign", "styled-components"],
+    "live": "https://sayed-diab.github.io/Kasper",
+    "prag1": "Creating a standout portfolio can be challenging. With endless design choices and the need to showcase your work effectively, it’s easy to feel overwhelmed.",
+    "prag2": "KASPER is here to help.",
+    "prag3": "A modern portfolio template offering sleek layouts, seamless navigation, and an intuitive interface to effortlessly highlight your projects and impress your audience."
+  }
+}

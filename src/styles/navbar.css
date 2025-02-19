@@ -26,6 +26,7 @@
 .vertical-div ul {
     display: flex;
     gap: 50px;
+    padding-left: 10px;
 }
 
 .item--nav {
@@ -75,7 +76,7 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url('../assets/menu-left-svgrepo-com.svg') !important;
+    background-image: url('./assets/btn/menu-left-svgrepo-com.svg') !important;
     width: 60px !important;
     height: 60px !important;
 

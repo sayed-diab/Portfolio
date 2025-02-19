@@ -35,7 +35,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <main className="hero">
+    <main
+      className="hero"
+      id="hero"
+    >
       <AsideBar />
       <Navbar stateY={activeSection} />
       <div

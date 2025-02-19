@@ -9,9 +9,15 @@
     }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1366px) and (min-width:1024px) {
     .about p {
         padding-right: 50px;
+    }
+}
+
+@media (max-width:1024px) {
+    .about p {
+        padding-right: 0px;
     }
 }
 

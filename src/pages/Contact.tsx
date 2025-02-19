@@ -3,12 +3,7 @@ const Contact = () => {
     <section
       className="contact"
       id="contact"
-    >
-      <img
-        src="../assets/favicon.webp"
-        alt=""
-      />
-    </section>
+    ></section>
   );
 };
 

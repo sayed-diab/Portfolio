@@ -5,13 +5,76 @@
 
 .portfolio {
     padding: var(--padding-w);
+
+    @media (max-width: 991px) {
+        padding: var(--padding-sm);
+    }
+
+    @media (max-width: 576px) {
+        padding: var(--padding-s);
+    }
 }
 
 .project-wraper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    gap: 50px;
+
     margin-top: 60px;
+
+    @media (max-width: 1200px) and (min-width:992px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    @media (max-width:992px) {
+        gap: 30px;
+    }
+
+    @media (min-width:992px) {
+        padding-right: 40px;
+
+    }
+
+    @media(max-width:768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+.drawer-content .os-scrollbar-handle {
+    background: #ccc !important;
+    z-index: 9999;
+}
+
+#drawer-content-inner {
+    scrollbar-width: none !important;
+
+
+
+    .os-scrollbar-track:hover .os-scrollbar-handle {
+        background: #ccc !important;
+
+    }
+}
+
+button[aria-haspopup="dialog"] {
+    @media (max-width:992px) {
+        /* padding: 10px 20px !important; */
+    }
+
+    @media(max-width: 576px) {
+        hr {
+            width: calc(100% - 3.7rem);
+        }
+    }
 }
 
 .info img {
@@ -24,15 +87,15 @@
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     opacity: 0.5;
+
+    @media(max-width: 576px) {
+        height: 60px;
+    }
 }
 
-button[aria-haspopup="dialog"] {
-    padding: 10px;
-}
+
 
 button[aria-haspopup="dialog"]:hover .info img {
-    /* filter: grayscale(0);
-    -webkit-filter: grayscale(0); */
     opacity: 1;
 }
 
@@ -41,7 +104,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 
 }
 
-.info>div {
+.info .description {
     h5 {
         text-align: left;
     }
@@ -53,6 +116,60 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
         text-align: left;
 
     }
+
+    @media(max-width: 576px) {
+        h5 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+.project {
+    gap: 60px;
+}
+
+.project button[aria-haspopup="dialog"]:last-of-type .text-box::before {
+    display: none;
+
+}
+
+.project:first-of-type {
+
+    @media (max-width: 1200px) and (min-width:992px) {
+        button[aria-haspopup="dialog"]:last-of-type .text-box::before {
+            display: flex;
+        }
+    }
+
+    @media(max-width:768px) {
+        button[aria-haspopup="dialog"]:last-of-type .text-box::before {
+            display: flex;
+        }
+    }
+}
+
+.text-box {
+    position: relative;
+}
+
+.text-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.499);
+    bottom: -30px;
+    left: 0;
+    z-index: 1;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
 }
 
 .button-container-3 {
@@ -73,6 +190,14 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+
+    @media(max-width: 576px) {
+        max-width: 60px;
+        min-width: 60px;
+        max-height: 30px;
+        letter-spacing: 0px !important;
+        margin-left: 10px;
+    }
 }
 
 .button-container-3:hover {
@@ -90,9 +215,9 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     justify-content: center;
     letter-spacing: 3px;
     font-weight: bold;
-    background-image: url('../assets/bg-icon.webp');
-    -webkit-mask: url("./src/assets/btn/natureSmaller.png");
-    mask: url("./src/assets/btn/natureSmaller.png");
+    background-image: url('./assets/btn/bg-icon.webp');
+    -webkit-mask: url("./assets/btn/natureSmaller.png");
+    mask: url("./assets/btn/natureSmaller.png");
     -webkit-mask-size: 7100% 100%;
     mask-size: 7100% 100%;
     border: none;
@@ -100,6 +225,11 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     cursor: pointer;
     -webkit-animation: ani2 0.7s steps(70) forwards;
     animation: ani2 0.7s steps(70) forwards;
+
+    @media(max-width: 576px) {
+
+        letter-spacing: 1px !important;
+    }
 }
 
 .button-container-3 div:hover {
@@ -127,6 +257,11 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
     -o-transform: translate(-50%);
+
+    @media(max-width: 576px) {
+        margin-top: 8px;
+
+    }
 }
 
 @-webkit-keyframes ani {
@@ -202,17 +337,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     opacity: 0 !important;
 }
 
-.drawer-content {
-    .os-scrollbar-handle {
-        background: #ccc !important;
-        width: 6px !important;
-    }
 
-    .os-scrollbar-track:hover .os-scrollbar-handle {
-        background: #ccc !important;
-        width: 6px !important;
-    }
-}
 
 @media (max-width:1336px) {}
 

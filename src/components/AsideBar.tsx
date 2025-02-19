@@ -4,7 +4,7 @@ const AsideBar = () => {
     <section className="aside-bar">
       <div className="logo-container">
         <img
-          src="./src/assets/favicon2.png"
+          src="./assets/favicon.webp"
           alt="logo"
         />
         <h1>

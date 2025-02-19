@@ -65,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ stateY }) => {
           <div className="container-fluid">
             <div className="logo">
               <img
-                src="./src/assets/favicon2.png"
+                src="./assets/favicon.webp"
                 alt="logo"
               />
               <h1 className="navbar-brand">
