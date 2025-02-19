@@ -215,9 +215,9 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     justify-content: center;
     letter-spacing: 3px;
     font-weight: bold;
-    background-image: url('./assets/btn/bg-icon.webp');
-    -webkit-mask: url("./assets/btn/natureSmaller.png");
-    mask: url("./assets/btn/natureSmaller.png");
+    background-image: url('/assets/btn/bg-icon.webp');
+    -webkit-mask: url("/assets/btn/natureSmaller.png");
+    mask: url("/assets/btn/natureSmaller.png");
     -webkit-mask-size: 7100% 100%;
     mask-size: 7100% 100%;
     border: none;

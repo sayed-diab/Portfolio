@@ -56,7 +56,7 @@ body {
     font-weight: 300;
     font-style: normal;
     min-height: fit-content;
-    background-image: url("./assets/background/black-stone-texture.webp");
+    background-image: url("/assets/background/black-stone-texture.webp");
     background-size: cover;
     scrollbar-width: none !important;
     background-attachment: fixed;
