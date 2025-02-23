@@ -14,6 +14,7 @@ const Links = (props: { icon: string; link: string; duration: number }) => {
         className="transition-all duration-300 text-[var(--silver-color)] text-3xl ml-3 mr-3 hover:text-[var(--sec-color)]"
         href={props.link}
         target="_blank"
+        aria-label={props.link}
       >
         <i className={` text-3xl bi bi-${props.icon}`}></i>
       </a>
