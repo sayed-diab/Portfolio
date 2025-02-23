@@ -104,9 +104,10 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 
 }
 
-.info .description {
+.description {
     h2 {
         text-align: left;
+        font-size: 20px;
     }
 
     p {
