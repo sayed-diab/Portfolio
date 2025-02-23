@@ -23,6 +23,7 @@ const Home = () => {
               <img
                 src="./assets/New-Bg.webp"
                 alt="pic"
+                loading="lazy"
               />
             </div>
           </div>
