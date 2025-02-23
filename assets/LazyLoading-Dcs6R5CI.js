@@ -1,0 +1,1 @@
+import{j as e}from"./index-vgsDIfjj.js";const s=()=>e.jsxs("video",{autoPlay:!0,loop:!0,muted:!0,playsInline:!0,children:[e.jsx("source",{src:"./assets/loading.webm",type:"video/webm"}),"Your browser does not support WebM videos."]});export{s as default};
