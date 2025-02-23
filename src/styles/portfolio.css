@@ -105,7 +105,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 }
 
 .info .description {
-    h5 {
+    h2 {
         text-align: left;
     }
 
@@ -118,7 +118,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     }
 
     @media(max-width: 576px) {
-        h5 {
+        h2 {
             font-size: 16px;
         }
 

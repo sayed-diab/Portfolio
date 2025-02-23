@@ -82,7 +82,7 @@ const CustomDrawer = ({ panels, altPanels, logo, altLogo, title, description, te
             </div>
             <div className="w-full h-[60px] text-box d-flex gap-2 justify-content-between align-items-center">
               <div className="description d-flex flex-column align-items-start justify-content-center">
-                <h5>{title}</h5>
+                <h2>{title}</h2>
                 <p className="max-w-[62ch] ">{description}</p>
               </div>
               <div className="button-container-3">
@@ -111,7 +111,7 @@ const CustomDrawer = ({ panels, altPanels, logo, altLogo, title, description, te
                     className="ml-2 mr-4 h-[40px]"
                   />
                   <div className="description sm:max-w-[54ch] max-w-[60ch] gap-1 d-flex flex-column align-items-start justify-content-center">
-                    <h5 className="my-auto">{title}</h5>
+                    <h2 className="my-auto">{title}</h2>
                     <p className="text-sm my-auto leading-tight text-muted-foreground">{description}</p>
                   </div>
                 </div>

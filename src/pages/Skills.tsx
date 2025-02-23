@@ -10,9 +10,9 @@ const SkillsComponent = (props: { icons: string[]; title: string; duration: numb
           transition={{ delay: props.duration, duration: 0.8, ease: 'easeOut' }} // Triggers when 50% visible
           viewport={{ once: true, amount: 0.7 }}
         >
-          <h3>
+          <h2>
             {props.title} <span>:</span>
-          </h3>
+          </h2>
           <div className="icon-skills">
             {props.icons.map((icon) => (
               <img

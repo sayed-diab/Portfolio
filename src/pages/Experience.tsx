@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
             draggable={true}
           >
             <article>
-              <h4>Front-End Development Course | Udacity</h4>
+              <h2>Front-End Development Course | Udacity</h2>
               <p>
                 <strong>Duration:</strong> 2020 oct – 2021 jan
               </p>
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
               </ul>
             </article>
             <article>
-              <h4>React Developer (Self-Learning & Projects)</h4>
+              <h2>React Developer (Self-Learning & Projects)</h2>
               <p>
                 <strong>Duration:</strong> 2021 – Present
               </p>
@@ -79,7 +79,7 @@ const Experience: React.FC = () => {
               </ul>
             </article>
             <article>
-              <h4>Front-End Developer | Freelance (Khamsat Platform)</h4>
+              <h2>Front-End Developer | Freelance (Khamsat Platform)</h2>
               <p>
                 <strong>Duration:</strong> 2022 – Present
               </p>
@@ -94,7 +94,7 @@ const Experience: React.FC = () => {
               </ul>
             </article>
             <article>
-              <h4>Front-End Developer Intern | Kreativstorm (Application in Progress)</h4>
+              <h2>Front-End Developer Intern | Kreativstorm (Application in Progress)</h2>
               <p>
                 <strong>Expected Duration:</strong> 2025 oct – 2026 jan
               </p>
