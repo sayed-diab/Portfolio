@@ -38,7 +38,7 @@ ul.slick-dots {
     border-block-width: 3px 0 !important;
 }
 
-.slick-dots {
+#experience.slick-dots {
     display: none !important;
 }
 

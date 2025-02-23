@@ -22,8 +22,7 @@ const Home = () => {
             <div className="cut-shape">
               <img
                 src="./assets/New-Bg.webp"
-                alt=""
-                loading="lazy"
+                alt="pic"
               />
             </div>
           </div>
@@ -57,10 +56,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{
-  /* <div className="ml-10 work font-semibold bg-green-600/20 mt-3 whitespace-nowrap text-green-600 hover:bg-green-500/20 text-sm px-3 py-1 rounded-full inline-block hover:text-green-500">
-  <span className="p-1 my-auto mb-px mr-1.5 inline-block bg-green-600 rounded-full"></span>
-  Open to work
-</div> */
-}

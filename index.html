@@ -11,20 +11,6 @@
 <body>
   <div id="root"></div>
   <script>
-
-    const rootDiv = document.getElementById("root");
-    let isHidden = false;
-
-    function toggleVisibility() {
-      isHidden = !isHidden;
-      if (isHidden) {
-        rootDiv.setAttribute("aria-hidden", "true");
-        rootDiv.setAttribute("inert", "");
-      } else {
-        rootDiv.removeAttribute("aria-hidden");
-        rootDiv.removeAttribute("inert");
-      }
-    }
   </script>
   <script type="module" src="/src/main.tsx"></script>
 </body>

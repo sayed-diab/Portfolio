@@ -46,8 +46,9 @@ const Experience: React.FC = () => {
                   className="container grid grid-cols-3 gap-2 mx-auto"
                 >
                   <img
-                    className=" rounded"
+                    className="rounded"
                     src="./assets/certificate.webp"
+                    alt="certificate"
                   />
                 </SlideshowLightbox>
               </div>

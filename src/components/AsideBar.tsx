@@ -1,4 +1,4 @@
-import '../styles/asidebar.css';
+import '/src/styles/asidebar.css';
 const AsideBar = () => {
   return (
     <section className="aside-bar">

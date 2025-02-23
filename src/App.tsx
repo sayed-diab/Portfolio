@@ -1,19 +1,14 @@
-import { useEffect } from 'react';
-import Hero from './pages/Hero';
+import Hero from './pages/Hero.tsx';
 import './styles/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { OverlayScrollbars } from 'overlayscrollbars';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  useEffect(() => {
-    OverlayScrollbars(document.body, {
-      scrollbars: {
-        autoHide: 'move', // Options: "never", "scroll", "leave", "move"
-        autoHideDelay: 1500,
-      },
-    });
-  }, []);
+  OverlayScrollbars(document.body, {
+    scrollbars: {
+      autoHide: 'move', // Options: "never", "scroll", "leave", "move"
+      autoHideDelay: 1500,
+    },
+  });
 
   return <Hero />;
 }

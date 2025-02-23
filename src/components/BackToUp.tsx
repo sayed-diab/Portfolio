@@ -31,7 +31,7 @@ const BackToUp = () => {
             <img
               className={height >= 300 ? 'w-[32px] tranA I Z' : 'w-[32px] tranA I'}
               src="./assets/arrow-up-svgrepo-com.svg"
-              alt=""
+              alt="svg"
             />
           </span>
         </div>
