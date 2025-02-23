@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { Suspense, useRef, useState, useEffect } from 'react';
 
 const Home = React.lazy(() => import('./Home'));
 const About = React.lazy(() => import('./About'));
@@ -10,6 +10,7 @@ const Footer = React.lazy(() => import('./Footer'));
 const Navbar = React.lazy(() => import('@/components/Navbar'));
 const AsideBar = React.lazy(() => import('@/components/AsideBar'));
 const BackToUp = React.lazy(() => import('@/components/BackToUp'));
+const LazyLoading = React.lazy(() => import('@/components/LazyLoading'));
 const Hero = () => {
   const spyRef = useRef<HTMLDivElement>(null);
   const [activeSection, setActiveSection] = useState<string>('');
@@ -51,10 +52,18 @@ const Hero = () => {
         <BackToUp />
         <Home />
         <About />
-        <Skills />
-        <Experience />
-        <Portfolio />
-        <Contact />
+        <Suspense fallback={<LazyLoading />}>
+          <Skills />
+        </Suspense>
+        <Suspense fallback={<LazyLoading />}>
+          <Experience />
+        </Suspense>
+        <Suspense fallback={<LazyLoading />}>
+          <Portfolio />
+        </Suspense>
+        <Suspense fallback={<LazyLoading />}>
+          <Contact />
+        </Suspense>
         <Footer />
       </div>
     </main>
