@@ -117,7 +117,7 @@ ul.slick-dots {
         visibility: visible !important;
     }
 
-    article {
+    #experience article {
         padding-right: 15px;
 
         h2 {
