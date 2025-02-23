@@ -1,0 +1,1 @@
+import{j as s}from"./index-Bci8n7Y0.js";const a=()=>s.jsx("section",{className:"aside-bar",children:s.jsxs("div",{className:"logo-container",children:[s.jsx("img",{src:"./assets/favicon.webp",alt:"logo"}),s.jsxs("h1",{children:["sayed",s.jsx("b",{children:"Diab"})]})]})});export{a as default};
