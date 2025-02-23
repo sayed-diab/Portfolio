@@ -27,11 +27,9 @@
     background: var(--silver-color) !important;
 }
 
-.os-scrollbar-track {}
 
 .os-scrollbar-track:hover {
     background: rgba(255, 255, 255, 0.342) !important;
-    /* width: 10px !important; */
 }
 
 .os-scrollbar-track:hover .os-scrollbar-handle {
@@ -115,6 +113,12 @@ body>.os-scrollbar {
     }
 }
 
+@media (max-width: 1280px) {
+    .main-content {
+        padding-right: 60px;
+    }
+}
+
 @media (max-width: 1024px) {
     .main-content {
         padding-left: 150px;
@@ -169,10 +173,11 @@ body>.os-scrollbar {
     display: flex;
     position: relative;
     margin-right: 3px;
+    color: var(--sec-color) !important
 }
 
 .cont:last-of-type {
-    font-weight: 900 !important;
+    /* font-weight: 900 !important; */
     color: var(--sec-color) !important;
 }
 
@@ -187,6 +192,19 @@ body>.os-scrollbar {
     -ms-transition: all ease-out;
     -o-transition: all ease-out;
 }
+
+.tranA {
+    position: relative;
+    opacity: 0;
+    bottom: 80px;
+    transition: all ease-out;
+    -webkit-transition: all ease-out;
+    -moz-transition: all ease-out;
+    -ms-transition: all ease-out;
+    -o-transition: all ease-out;
+}
+
+
 
 .tran.A {
     transition-duration: 1.1s;
@@ -269,6 +287,16 @@ body>.os-scrollbar {
     -o-transform: rotate(-140deg);
 }
 
+.tranA.I {
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+}
+
 .Z {
     opacity: 1;
     bottom: 40px;
@@ -278,6 +306,9 @@ body>.os-scrollbar {
     -ms-transform: rotate(0deg) !important;
     -o-transform: rotate(0deg) !important;
 }
+
+
+
 
 
 
@@ -326,9 +357,7 @@ body>.os-scrollbar {
     height: 100vh;
 }
 
-.portfolio {
-    height: 100vh;
-}
+
 
 
 

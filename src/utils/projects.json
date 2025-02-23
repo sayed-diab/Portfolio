@@ -37,5 +37,18 @@
     "prag1": "Creating a standout portfolio can be challenging. With endless design choices and the need to showcase your work effectively, it’s easy to feel overwhelmed.",
     "prag2": "KASPER is here to help.",
     "prag3": "A modern portfolio template offering sleek layouts, seamless navigation, and an intuitive interface to effortlessly highlight your projects and impress your audience."
+  },
+  "sn": {
+    "panels": ["./assets/projects/sn/1.webp", "./assets/projects/sn/2.webp", "./assets/projects/sn/3.webp", "./assets/projects/sn/4.webp"],
+    "altPanels": "SN & KHMIN panels",
+    "title": "SN & KHMIN",
+    "logo": "./assets/projects/sn/logo.webp",
+    "altLogo": "SN & KHMIN logo",
+    "description": "Beautifully designed front-end template to elegantly showcase and enhance your creative projects with SN & KHMIN.",
+    "tech": ["Swiper", "JQuery", "Bootstrap"],
+    "live": "https://sayed-diab.github.io/landing-ar",
+    "prag1": "Building a standout portfolio can be overwhelming. With countless design options and the challenge of showcasing your work effectively, it’s easy to get lost in the process.",
+    "prag2": "SN & KHMIN is here to simplify it.",
+    "prag3": "A modern portfolio template featuring sleek layouts, smooth navigation, and an intuitive interface—helping you effortlessly showcase your projects and leave a lasting impression."
   }
 }

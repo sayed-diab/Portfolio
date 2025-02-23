@@ -119,15 +119,15 @@ const SphereAnimation: React.FC = () => {
               y2="15%"
             >
               <stop
-                stopColor="#373734"
+                stopColor="transparent"
                 offset="0%"
               />
               <stop
-                stopColor="#242423"
+                stopColor="transparent"
                 offset="50%"
               />
               <stop
-                stopColor="#0D0D0C"
+                stopColor="transparent"
                 offset="100%"
               />
             </linearGradient>

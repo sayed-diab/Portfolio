@@ -9,8 +9,8 @@ function App() {
   useEffect(() => {
     OverlayScrollbars(document.body, {
       scrollbars: {
-        autoHide: 'leave', // Options: "never", "scroll", "leave", "move"
-        autoHideDelay: 500,
+        autoHide: 'move', // Options: "never", "scroll", "leave", "move"
+        autoHideDelay: 1500,
       },
     });
   }, []);

@@ -1,6 +1,8 @@
 'use client';
 
-import { CSSProperties, ReactElement, ReactNode, useEffect, useRef, useState } from 'react';
+import type React from 'react';
+
+import { type CSSProperties, type ReactElement, type ReactNode, useEffect, useRef, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
@@ -57,10 +59,10 @@ interface NeonGradientCardProps {
    * */
   neonColors?: NeonColorsProps;
 
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
-const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
+export const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
   className,
   children,
   borderSize = 2,
@@ -95,7 +97,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
       const { offsetWidth, offsetHeight } = containerRef.current;
       setDimensions({ width: offsetWidth, height: offsetHeight });
     }
-  }, [children]);
+  }, []);
 
   return (
     <div
@@ -115,7 +117,11 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
           '--after-blur': `${dimensions.width / 3}px`,
         } as CSSProperties
       }
-      className={cn('relative z-10 size-full rounded-[var(--border-radius)]', className)}
+      className={cn(
+        'relative z-10 size-full rounded-[var(--border-radius)]',
+        '[@-moz-document_url-prefix()]:transform-gpu', // Add Firefox-specific prefix
+        className,
+      )}
       {...props}
     >
       <div
@@ -124,13 +130,21 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
           'before:absolute before:-left-[var(--border-size)] before:-top-[var(--border-size)] before:-z-10 before:block',
           "before:h-[var(--pseudo-element-height)] before:w-[var(--pseudo-element-width)] before:rounded-[var(--border-radius)] before:content-['']",
           'before:bg-[linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))] before:bg-[length:100%_200%]',
+          'before:-moz-animation-name:background-position-spin', // Firefox-specific animation
+          'before:-moz-animation-duration:3s',
+          'before:-moz-animation-timing-function:linear',
+          'before:-moz-animation-iteration-count:infinite',
           'before:animate-background-position-spin',
           'after:absolute after:-left-[var(--border-size)] after:-top-[var(--border-size)] after:-z-10 after:block',
           "after:h-[var(--pseudo-element-height)] after:w-[var(--pseudo-element-width)] after:rounded-[var(--border-radius)] after:blur-[var(--after-blur)] after:content-['']",
+          'after:bg-[-moz-linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))]', // Firefox-specific gradient
           'after:bg-[linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))] after:bg-[length:100%_200%] after:opacity-80',
+          'after:-moz-animation-name:background-position-spin', // Firefox-specific animation
+          'after:-moz-animation-duration:3s',
+          'after:-moz-animation-timing-function:linear',
+          'after:-moz-animation-iteration-count:infinite',
           'after:animate-background-position-spin',
           'dark:bg-neutral-900',
-          'shadow--chlid',
         )}
       >
         {children}
@@ -138,5 +152,3 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
     </div>
   );
 };
-
-export { NeonGradientCard };

@@ -1,10 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
+
 const Home = React.lazy(() => import('./Home'));
 const About = React.lazy(() => import('./About'));
 const Skills = React.lazy(() => import('./Skills'));
 const Experience = React.lazy(() => import('./Experience'));
 const Portfolio = React.lazy(() => import('./Portfolio'));
 const Contact = React.lazy(() => import('./Contact'));
+const Footer = React.lazy(() => import('./Footer'));
 const Navbar = React.lazy(() => import('@/components/Navbar'));
 const AsideBar = React.lazy(() => import('@/components/AsideBar'));
 const BackToUp = React.lazy(() => import('@/components/BackToUp'));
@@ -36,7 +38,7 @@ const Hero = () => {
 
   return (
     <main
-      className="hero"
+      className="hero overflow-hidden"
       id="hero"
     >
       <AsideBar />
@@ -53,6 +55,7 @@ const Hero = () => {
         <Experience />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </main>
   );

@@ -24,7 +24,7 @@
 
     @media (max-width: 1200px) and (min-width:992px) {
         grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
+        gap: 60px;
     }
 
     @media (max-width:992px) {
@@ -38,7 +38,7 @@
 
     @media(max-width:768px) {
         grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
+        gap: 60px;
     }
 }
 

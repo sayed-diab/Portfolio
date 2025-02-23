@@ -11,14 +11,6 @@ const AsideBar = () => {
           sayed<b>Diab</b>
         </h1>
       </div>
-      <div className="social">
-        <a href="https://github.com/sayed-diab">
-          <i className="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/sayed-diab-974687224/">
-          <i className="bi bi-linkedin"></i>
-        </a>
-      </div>
     </section>
   );
 };

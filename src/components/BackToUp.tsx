@@ -28,6 +28,11 @@ const BackToUp = () => {
             <span className={height >= 300 ? 'tran G Z' : 'tran G'}>T</span>
             <span className={height >= 300 ? 'tran H Z' : 'tran H'}>o</span>
             <span className={height >= 300 ? 'tran I Z' : 'tran I'}>p</span>
+            <img
+              className={height >= 300 ? 'w-[32px] tranA I Z' : 'w-[32px] tranA I'}
+              src="./assets/arrow-up-svgrepo-com.svg"
+              alt=""
+            />
           </span>
         </div>
       </button>
