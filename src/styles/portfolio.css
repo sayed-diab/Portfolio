@@ -66,9 +66,7 @@
 }
 
 button[aria-haspopup="dialog"] {
-    @media (max-width:992px) {
-        /* padding: 10px 20px !important; */
-    }
+    @media (max-width:992px) {}
 
     @media(max-width: 576px) {
         hr {
@@ -78,9 +76,9 @@ button[aria-haspopup="dialog"] {
 }
 
 .info img {
-    /* filter: grayscale(100%);
+    filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-     */
+
     transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -97,6 +95,8 @@ button[aria-haspopup="dialog"] {
 
 button[aria-haspopup="dialog"]:hover .info img {
     opacity: 1;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 
 button[aria-haspopup="dialog"]:hover .button-container-3 {
@@ -132,7 +132,7 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
     gap: 60px;
 }
 
-.project button[aria-haspopup="dialog"]:last-of-type .text-box::before {
+.project div:nth-of-type(2)>button[aria-haspopup="dialog"] .text-box::before {
     display: none;
 
 }

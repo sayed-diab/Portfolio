@@ -1,16 +1,9 @@
 import { Carousel } from 'antd';
 import '../styles/experience.css';
-import { useEffect, useState } from 'react';
 import { SlideshowLightbox } from 'lightbox.js-react';
 import { motion } from 'framer-motion';
 
 const Experience: React.FC = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
   return (
     <section
       className="experience"
@@ -29,9 +22,9 @@ const Experience: React.FC = () => {
           <Carousel
             arrows={true}
             infinite={false}
-            dots={width <= 576 ? true : false}
+            dots={true}
             fade={true}
-            speed={1500}
+            speed={500}
             draggable={true}
           >
             <article>
@@ -49,6 +42,7 @@ const Experience: React.FC = () => {
                     className="rounded"
                     src="./assets/certificate.webp"
                     alt="certificate"
+                    loading="lazy"
                   />
                 </SlideshowLightbox>
               </div>
