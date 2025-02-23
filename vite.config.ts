@@ -10,10 +10,4 @@ export default defineConfig({
     },
   },
   base: '/',
-  build: {
-    cssCodeSplit: true, // Enable CSS splitting
-  },
-  optimizeDeps: {
-    exclude: ['lodash', 'moment'], // Exclude heavy libraries
-  },
 });
