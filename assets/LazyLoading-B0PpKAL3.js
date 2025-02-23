@@ -1,0 +1,1 @@
+import{j as e,a as o}from"./index-Bjx-siQi.js";const r=()=>e("video",{autoPlay:!0,loop:!0,muted:!0,playsInline:!0,children:[o("source",{src:"./assets/loading.webm",type:"video/webm"}),"Your browser does not support WebM videos."]});export{r as default};
