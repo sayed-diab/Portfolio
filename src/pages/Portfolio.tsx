@@ -1,7 +1,7 @@
 import CustomDrawer from '@/components/Drawer';
 import '../styles/portfolio.css';
 
-import { nnd, socotra, kasper, sn } from '../utils/projects.json';
+import { nnd, socotra, kasper, sn, petrolem } from '../utils/projects.json';
 const Portoflio = () => {
   return (
     <section
@@ -13,7 +13,7 @@ const Portoflio = () => {
       </h1>
 
       <div className="project-wraper">
-        <div className="project d-flex flex-col">
+        <div className="flex-col project d-flex">
           <CustomDrawer
             panels={socotra.panels}
             altPanels={socotra.altPanels}
@@ -42,8 +42,22 @@ const Portoflio = () => {
             prag3={nnd.prag3}
             duration={0.7}
           />
+          <CustomDrawer
+            panels={petrolem.panels}
+            altPanels={petrolem.altPanels}
+            title={petrolem.title}
+            logo={petrolem.logo}
+            altLogo={petrolem.altLogo}
+            description={petrolem.description}
+            tech={petrolem.tech}
+            live={petrolem.live}
+            prag1={petrolem.prag1}
+            prag2={petrolem.prag2}
+            prag3={petrolem.prag3}
+            duration={1.3}
+          />
         </div>
-        <div className="project d-flex flex-col">
+        <div className="flex-col project d-flex">
           <CustomDrawer
             panels={kasper.panels}
             altPanels={kasper.altPanels}

@@ -50,5 +50,18 @@
     "prag1": "Building a standout portfolio can be overwhelming. With countless design options and the challenge of showcasing your work effectively, it’s easy to get lost in the process.",
     "prag2": "SN & KHMIN is here to simplify it.",
     "prag3": "A modern portfolio template featuring sleek layouts, smooth navigation, and an intuitive interface—helping you effortlessly showcase your projects and leave a lasting impression."
+  },
+  "petrolem": {
+    "panels": ["./assets/projects/petrolem/1.webp", "./assets/projects/petrolem/2.webp", "./assets/projects/petrolem/3.webp", "./assets/projects/petrolem/4.webp", "./assets/projects/petrolem/5.webp"],
+    "altPanels": "Petrolem panels",
+    "title": "GLOBAL CRUDE CORPORATE PETROLEUM",
+    "logo": "./assets/projects/petrolem/logo.webp",
+    "altLogo": "GLOBAL CRUDE logo",
+    "description": "A scalable WordPress site to showcase Global Crude Corporate Petroleum’s energy initiatives.",
+    "tech": ["WordPress", "Sanet Template", "Hostinger"],
+    "live": "https://globalcrudecp.com/",
+    "prag1": "Building a powerful corporate presence online can be complex—especially when your audience speaks more than one language.",
+    "prag2": "Global Crude Corporate Petroleum’s WordPress solution simplifies the process.",
+    "prag3": "A bilingual website (Arabic & English) with modern design, optimized performance, and seamless content management—ensuring your message is clear and professional across markets."
   }
 }

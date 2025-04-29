@@ -138,7 +138,12 @@ button[aria-haspopup="dialog"]:hover .button-container-3 {
 
 }
 
+
+
 .project:first-of-type {
+    button[aria-haspopup="dialog"]:last-of-type .text-box::before {
+        display: flex;
+    }
 
     @media (max-width: 1200px) and (min-width:992px) {
         button[aria-haspopup="dialog"]:last-of-type .text-box::before {
